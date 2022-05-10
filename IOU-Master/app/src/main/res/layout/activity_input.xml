@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-67dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipient ID" />
+
+        <!--            android:text="myFriendID" />-->
+
+        <EditText
+            android:id="@+id/recipientIDField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I.O.U."
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+        <EditText
+            android:id="@+id/iouField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Type your promise here"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="433dp" />
+
+        <Button
+            android:id="@+id/sendIOUButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="sendIOU"
+            android:text="Send Promise"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="-26dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
